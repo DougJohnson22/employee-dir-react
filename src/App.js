@@ -8,7 +8,6 @@ function App() {
   return (
     <Router>
       <div>
-        <NavBar />
         <Route exact path="/">
           <Landing />
         </Route>
