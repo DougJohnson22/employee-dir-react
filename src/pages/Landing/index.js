@@ -110,7 +110,7 @@ class index extends Component {
                     <div className="jumbotron row">
                         <h1 className="display-4 text-center">Employee Tracker!</h1>
                     </div>
-                    <div className="row">
+                    <div className="row row-cols-1 row-cols-md-4">
                         {this.state.filterEmp.map(e => <EmpCard data={e} key={e.cell} />)}
                     </div>
                 </div>
