@@ -1,11 +1,12 @@
 import React from 'react'
+import Style from "./style.css"
 
 export default function EmpCard(props) {
 
     return (
         
         <div className="card col-3 m-3">
-            <img src={props.data.picture.large} className="card-img-top" alt={props.data.name.first} />
+            <img src={props.data.picture.large} className="card-img-top userImg" alt={props.data.name.first} />
             <div className="card-body">
                 <h5 className="card-title">{props.data.name.title} {props.data.name.first} {props.data.name.last}</h5>
                 <p className="card-text">Age: {props.data.dob.age}</p>
